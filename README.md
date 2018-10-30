@@ -5,14 +5,6 @@
 
 ### 1.Trait模式
 
-use RuLong\Area\Traits\UserHasAddress;
-class User extends Authenticatable
-{
-    use UserHasAddress;
-
-    public $guarded = [];
-}
-
 #### // 用户地址列表
 $user->addresses;
 

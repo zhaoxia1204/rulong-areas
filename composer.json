@@ -1,0 +1,30 @@
+{
+    "name": "rulong/areas",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "C.Jason",
+            "email": "chenjxlg@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "RuLong\\Area": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RuLong\\Area\\ServiceProvider"
+            ],
+            "aliases": {
+                "Address": "RuLong\\Area\\Facades\\Address",
+                "Area": "RuLong\\Area\\Facades\\Area"
+            }
+        }
+    }
+}

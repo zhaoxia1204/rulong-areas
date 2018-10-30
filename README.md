@@ -1,9 +1,9 @@
 # 用户收货地址管理
 
-使用方法
+##使用方法
 
-1.Trait模式
-
+###1.Trait模式
+···
 use RuLong\Area\Traits\UserHasAddress;
 
 class User extends Authenticatable
@@ -12,18 +12,16 @@ class User extends Authenticatable
 
     public $guarded = [];
 }
-
-可用方法
-
+···
 // 用户地址列表
 $user->addresses;
 
 // 用户默认地址
 $user->getDefaultAddress;
 
-2.地址管理
 
-Facade模式
+###2.Facade模式
+//地址管理
 $data = [
 	'name'      => $name, //收货人姓名
 	'mobile'       => $mobile, //收货人电话

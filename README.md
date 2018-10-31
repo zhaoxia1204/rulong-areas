@@ -7,10 +7,11 @@
 
 ```
 use RuLong\Area\Traits\UserHasAddress;
- class User extends Authenticatable
+ 
+class User extends Authenticatable
 {
     use UserHasAddress;
-     public $guarded = [];
+    public $guarded = [];
 }
 ```
 

@@ -14,6 +14,8 @@ $user->getDefaultAddress;
 
 ### 2.Facade模式
 #### //地址数据
+
+```
 $data = [
 	'name'      => $name, //收货人姓名
 	'mobile'       => $mobile, //收货人电话
@@ -22,6 +24,7 @@ $data = [
 	'city_sn'    => $city_sn, //城市编码
 	'area_sn' => $area_sn, //区域编码
 ];
+```
 
 #### // 新增地址
 Address::store($data);

@@ -6,11 +6,16 @@
 ### 1.Trait模式
 
 #### // 用户地址列表
+
+```
 $user->addresses;
+```
 
 #### // 用户默认地址
-$user->getDefaultAddress;
 
+```
+$user->getDefaultAddress;
+```
 
 ### 2.Facade模式
 #### //地址数据
@@ -27,14 +32,27 @@ $data = [
 ```
 
 #### // 新增地址
+
+```
 Address::store($data);
+```
 
 #### // 更新地址
+
+```
 Address::update(UserAddress $address, $data);
+```
 
 #### // 删除地址
+
+```
 Address::destroy($id);
+```
 
 #### // 获取区域列表
+
+```
 //$psn=0 返回所有省份列表，$psn=省份sn 返回省份所有城市列表，$psn=城市sn 返回城市所有区域列表。
 Area::index($psn); 
+```
+

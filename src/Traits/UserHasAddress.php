@@ -14,7 +14,6 @@ trait UserHasAddress
 
     public function getDefaultAddress()
     {
-        return $this->addresses()->where('def',1)->first();
+        return $this->addresses()->orderBy('def','desc')->firstOrFail();
     }
-
 }

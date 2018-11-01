@@ -23,7 +23,7 @@ class CreateUserAddressesTable extends Migration
             $table->integer('city_sn')->unsigned();
             $table->integer('area_sn')->unsigned();
             $table->string('address')->nullable();
-            $table->boolean('is_default')->default(0);
+            $table->boolean('def')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

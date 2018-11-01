@@ -34,9 +34,6 @@ class CreateRulongAreasTable extends Migration
             $table->decimal('lat', 10, 7);
             $table->integer('depth')->nullable();
         });
-
-
-
     }
 
     /**
